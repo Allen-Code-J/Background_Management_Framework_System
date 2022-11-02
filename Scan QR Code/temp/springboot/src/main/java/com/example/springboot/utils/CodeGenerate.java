@@ -10,7 +10,7 @@ import java.util.Collections;
  */
 public class CodeGenerate {
     public static void main(String[] args) {
-
+        generate();
     }
 
     private static void generate() {
@@ -23,10 +23,13 @@ public class CodeGenerate {
                 })
                 .packageConfig(builder -> {
                     builder.parent("com.example.springboot") // 设置父包名
-                            .moduleName("") // 设置父包模块名
+                            .moduleName(null) // 设置父包模块名
                             .pathInfo(Collections.singletonMap(OutputFile.mapperXml, "/Users/xingzhexiangshuizhe/Desktop/INFO6350_2022FALL/Scan QR Code/springboot/src/main/resources/mapper/")); // 设置mapperXml生成路径
                 })
                 .strategyConfig(builder -> {
+                    builder.entityBuilder().enableLombok();
+                    builder.controllerBuilder().enableHyphenStyle()//开启驼峰命名
+                            .enableRestStyle();//开启@RestController控制器
                     builder.addInclude("sys_user") // 设置需要生成的表名
                             .addTablePrefix("t_", "sys_"); // 设置过滤表前缀
                 })
