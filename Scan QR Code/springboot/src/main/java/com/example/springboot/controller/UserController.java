@@ -118,6 +118,8 @@ public class UserController {
         if (!"".equals(nickname)) {
             queryWrapper.like("nickname", nickname);
         }
+        User currentUser = TokenUtils.getCurrentUser();
+        System.out.println("获取当前用户信息============"+currentUser.getNickname());
         return Result.success(userService.page(new Page<>(pageNum, pageSize), queryWrapper));
     }
 
