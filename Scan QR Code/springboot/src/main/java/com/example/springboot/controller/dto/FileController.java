@@ -59,6 +59,7 @@ public class FileController {
         if (!parentFile.exists()) {
             parentFile.mkdirs();
         }
+
         String url;
         // 获取文件的md5
         String md5 = SecureUtil.md5(file.getInputStream());
@@ -147,5 +148,27 @@ public class FileController {
         }
         return Result.success();
     }
-}
 
+    /**
+     * 分页查询接口
+     *
+     * @param pageNum
+     * @param pageSize
+     * @param name
+     * @return
+     */
+    @GetMapping("/page")
+    public Result findPage(@RequestParam Integer pageNum,
+                           @RequestParam Integer pageSize,
+                           @RequestParam(defaultValue = "") String name) {
+
+        QueryWrapper<Files> queryWrapper = new QueryWrapper<>();
+        // 查询未删除的记录
+        queryWrapper.eq("is_delete", false);
+        queryWrapper.orderByDesc("id");
+        if (!"".equals(name)) {
+            queryWrapper.like("name", name);
+        }
+        return Result.success(fileMapper.selectPage(new Page<>(pageNum, pageSize), queryWrapper));
+    }
+}

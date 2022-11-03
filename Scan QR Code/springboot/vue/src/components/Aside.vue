@@ -1,3 +1,5 @@
+
+
 <template>
   <el-menu :default-openeds="['1', '3']" style="height: 100%;overflow-x: hidden "
            background-color="rgb(48, 65,86)"
@@ -25,6 +27,10 @@
       <el-menu-item index="/user/">
         <i class="el-icon-s-custom"></i>
         <span slot="title">用户管理</span>
+      </el-menu-item>
+      <el-menu-item index="/file">
+        <i class="el-icon-document"></i>
+        <span slot="title">文件管理</span>
       </el-menu-item>
     </el-submenu>
   </el-menu>
