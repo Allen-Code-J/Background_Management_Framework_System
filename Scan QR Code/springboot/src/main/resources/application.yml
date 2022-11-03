@@ -22,3 +22,7 @@ mybatis-plus:
   configuration:
     log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 
+files:
+  upload:
+    path: /Users/xingzhexiangshuizhe/Desktop/INFO6350_2022FALL/Scan QR Code/files/
+
