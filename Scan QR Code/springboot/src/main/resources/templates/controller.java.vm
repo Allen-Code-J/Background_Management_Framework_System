@@ -6,6 +6,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.annotation.Resource;
 import java.util.List;
+
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
 
 import $!{package.Service}.$!{table.serviceName};
@@ -76,7 +77,7 @@ public boolean deleteBatch(@RequestBody List<Integer> ids){
 @GetMapping("/page")
 public Page<${entity}> findPage(@RequestParam Integer pageNum,
 @RequestParam Integer pageSize){
-        QueryWrapper<User> queryWrapper=new QueryWrapper<>();
+        QueryWrapper<${entity}> queryWrapper=new QueryWrapper<>();
         queryWrapper.orderByDesc("id");
         return ${table.entityPath}Service.page(new Page<>(pageNum,pageSize),queryWrapper);
         }
