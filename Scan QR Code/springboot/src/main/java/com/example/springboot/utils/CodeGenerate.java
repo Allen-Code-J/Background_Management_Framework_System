@@ -30,7 +30,7 @@ public class CodeGenerate {
                     builder.entityBuilder().enableLombok();
                     builder.controllerBuilder().enableHyphenStyle()//开启驼峰命名
                             .enableRestStyle();//开启@RestController控制器
-                    builder.addInclude("sys_role") // 设置需要生成的表名
+                    builder.addInclude("sys_menu") // 设置需要生成的表名
                             .addTablePrefix("t_", "sys_"); // 设置过滤表前缀
                 })
                 //.templateEngine(new FreemarkerTemplateEngine()) // 使用Freemarker引擎模板，默认的是Velocity引擎模板

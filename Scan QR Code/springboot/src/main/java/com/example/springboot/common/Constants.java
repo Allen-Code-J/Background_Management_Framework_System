@@ -7,5 +7,9 @@ public interface Constants {
     String CODE_400 = "400";//参数不足
     String CODE_600 = "600";//其他业务异常
 
+    String DICT_TYPE_ICON = "icon";
+
+    String FILES_KEY = "FILES_FRONT_ALL";
+
 
 }
