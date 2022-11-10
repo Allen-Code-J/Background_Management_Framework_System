@@ -20,18 +20,18 @@ class ViewController: UIViewController {
         txtPassword.text = ""
     }
     
-//    override func viewDidAppear(_ animated: Bool) {
-//        let keychain = KeyChainService().keyChain
-//        if keychain.get("uid") != nil {
-//            performSegue(withIdentifier: "segueLogin", sender: self)
-//        }
-//        txtPassword.text = ""
-//    }
-//
-//    func addUIDToKeychain(uid: String){
-//        let keychain = KeyChainService().keyChain
-//        keychain.set(uid, forKey: "uid")
-//    }
+    override func viewDidAppear(_ animated: Bool) {
+        let keychain = KeyChainService().keyChain
+        if keychain.get("uid") != nil {
+            performSegue(withIdentifier: "segueLogin", sender: self)
+        }
+        txtPassword.text = ""
+    }
+
+    func addUIDToKeychain(uid: String){
+        let keychain = KeyChainService().keyChain
+        keychain.set(uid, forKey: "uid")
+    }
 
     @IBAction func loginAction(_ sender: Any) {
         
@@ -53,9 +53,9 @@ class ViewController: UIViewController {
                 return
             }
             
-//            guard let uid = Auth.auth().currentUser?.uid else {return}
-//            strongSelf.addUIDToKeychain(uid: uid)
-//
+            guard let uid = Auth.auth().currentUser?.uid else {return}
+            strongSelf.addUIDToKeychain(uid: uid)
+
             strongSelf.performSegue(withIdentifier: "segueLogin", sender: strongSelf)
             
             
