@@ -10,6 +10,10 @@ import UIKit
 class SecondViewController: UIViewController {
 
     @IBOutlet weak var txtName: UITextField!
+    
+    var sendNameDelegate : SendNameDelegate?
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,6 +22,12 @@ class SecondViewController: UIViewController {
     
 
     @IBAction func setName(_ sender: Any) {
+        guard let name = txtName.text else {return}
+        
+        sendNameDelegate?.sendName(name: name)
+        
+        self.navigationController?.popViewController(animated: true)
+        
     }
     
 
