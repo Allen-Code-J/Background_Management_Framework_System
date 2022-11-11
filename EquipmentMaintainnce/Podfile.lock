@@ -1,0 +1,20 @@
+PODS:
+  - KeychainSwift (20.0.0)
+  - SwiftSpinner (2.2.0)
+
+DEPENDENCIES:
+  - KeychainSwift
+  - SwiftSpinner
+
+SPEC REPOS:
+  trunk:
+    - KeychainSwift
+    - SwiftSpinner
+
+SPEC CHECKSUMS:
+  KeychainSwift: 0ce6a4d13f7228054d1a71bb1b500448fb2ab837
+  SwiftSpinner: f9b59477fe107427f2b5b835497d6636fa167ede
+
+PODFILE CHECKSUM: 365f430cbca98dd44024433a684ceb6b4472e57e
+
+COCOAPODS: 1.11.3

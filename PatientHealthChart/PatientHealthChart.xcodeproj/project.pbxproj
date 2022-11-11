@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5D5002DF589951424AD1EA9A /* Pods_PatientHealthChart.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C791E404373A9F46388D44A /* Pods_PatientHealthChart.framework */; };
+		BB85D8FF291E096C0041E2BD /* KeyChainService.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85D8FE291E096C0041E2BD /* KeyChainService.swift */; };
+		BB85D901291E09C50041E2BD /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85D900291E09C50041E2BD /* StringExtension.swift */; };
+		BB85D903291E10140041E2BD /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB85D902291E10140041E2BD /* DashboardViewController.swift */; };
+		BBE830F8291DFEBD00147814 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE830F7291DFEBD00147814 /* AppDelegate.swift */; };
+		BBE830FA291DFEBD00147814 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE830F9291DFEBD00147814 /* SceneDelegate.swift */; };
+		BBE830FC291DFEBD00147814 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBE830FB291DFEBD00147814 /* ViewController.swift */; };
+		BBE830FF291DFEBD00147814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE830FD291DFEBD00147814 /* Main.storyboard */; };
+		BBE83101291DFEBF00147814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BBE83100291DFEBF00147814 /* Assets.xcassets */; };
+		BBE83104291DFEBF00147814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BBE83102291DFEBF00147814 /* LaunchScreen.storyboard */; };
+		BBE8310C291E012400147814 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BBE8310B291E012400147814 /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		3C791E404373A9F46388D44A /* Pods_PatientHealthChart.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PatientHealthChart.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE5F530FC8EDA0A0396587F /* Pods-PatientHealthChart.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientHealthChart.debug.xcconfig"; path = "Target Support Files/Pods-PatientHealthChart/Pods-PatientHealthChart.debug.xcconfig"; sourceTree = "<group>"; };
+		A7963A94AD31A07034DD25FC /* Pods-PatientHealthChart.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PatientHealthChart.release.xcconfig"; path = "Target Support Files/Pods-PatientHealthChart/Pods-PatientHealthChart.release.xcconfig"; sourceTree = "<group>"; };
+		BB85D8FE291E096C0041E2BD /* KeyChainService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainService.swift; sourceTree = "<group>"; };
+		BB85D900291E09C50041E2BD /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		BB85D902291E10140041E2BD /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
+		BBE830F4291DFEBD00147814 /* PatientHealthChart.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PatientHealthChart.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BBE830F7291DFEBD00147814 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BBE830F9291DFEBD00147814 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		BBE830FB291DFEBD00147814 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BBE830FE291DFEBD00147814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BBE83100291DFEBF00147814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BBE83103291DFEBF00147814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BBE83105291DFEBF00147814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BBE8310B291E012400147814 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BBE830F1291DFEBD00147814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5002DF589951424AD1EA9A /* Pods_PatientHealthChart.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		083DF5CB68B41216467F04B1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5EE5F530FC8EDA0A0396587F /* Pods-PatientHealthChart.debug.xcconfig */,
+				A7963A94AD31A07034DD25FC /* Pods-PatientHealthChart.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		9CD38988C7F8D4E4D8CB60AB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C791E404373A9F46388D44A /* Pods_PatientHealthChart.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		BB85D8FA291E04B40041E2BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				BBE830FD291DFEBD00147814 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		BB85D8FB291E04C20041E2BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		BB85D8FC291E04CA0041E2BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				BBE830FB291DFEBD00147814 /* ViewController.swift */,
+				BB85D902291E10140041E2BD /* DashboardViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		BB85D8FD291E094C0041E2BD /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				BB85D8FE291E096C0041E2BD /* KeyChainService.swift */,
+				BB85D900291E09C50041E2BD /* StringExtension.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		BBE830EB291DFEBD00147814 = {
+			isa = PBXGroup;
+			children = (
+				BBE830F6291DFEBD00147814 /* PatientHealthChart */,
+				BBE830F5291DFEBD00147814 /* Products */,
+				083DF5CB68B41216467F04B1 /* Pods */,
+				9CD38988C7F8D4E4D8CB60AB /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BBE830F5291DFEBD00147814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BBE830F4291DFEBD00147814 /* PatientHealthChart.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BBE830F6291DFEBD00147814 /* PatientHealthChart */ = {
+			isa = PBXGroup;
+			children = (
+				BB85D8FD291E094C0041E2BD /* Utilities */,
+				BB85D8FC291E04CA0041E2BD /* Controller */,
+				BB85D8FB291E04C20041E2BD /* Model */,
+				BB85D8FA291E04B40041E2BD /* View */,
+				BBE830F7291DFEBD00147814 /* AppDelegate.swift */,
+				BBE830F9291DFEBD00147814 /* SceneDelegate.swift */,
+				BBE83100291DFEBF00147814 /* Assets.xcassets */,
+				BBE83102291DFEBF00147814 /* LaunchScreen.storyboard */,
+				BBE83105291DFEBF00147814 /* Info.plist */,
+				BBE8310B291E012400147814 /* GoogleService-Info.plist */,
+			);
+			path = PatientHealthChart;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BBE830F3291DFEBD00147814 /* PatientHealthChart */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BBE83108291DFEBF00147814 /* Build configuration list for PBXNativeTarget "PatientHealthChart" */;
+			buildPhases = (
+				926B4D80CBF237FD19405DF8 /* [CP] Check Pods Manifest.lock */,
+				BBE830F0291DFEBD00147814 /* Sources */,
+				BBE830F1291DFEBD00147814 /* Frameworks */,
+				BBE830F2291DFEBD00147814 /* Resources */,
+				876B6A560E4EAA7DCCF92DAE /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PatientHealthChart;
+			productName = PatientHealthChart;
+			productReference = BBE830F4291DFEBD00147814 /* PatientHealthChart.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BBE830EC291DFEBD00147814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					BBE830F3291DFEBD00147814 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = BBE830EF291DFEBD00147814 /* Build configuration list for PBXProject "PatientHealthChart" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BBE830EB291DFEBD00147814;
+			productRefGroup = BBE830F5291DFEBD00147814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BBE830F3291DFEBD00147814 /* PatientHealthChart */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BBE830F2291DFEBD00147814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE83104291DFEBF00147814 /* LaunchScreen.storyboard in Resources */,
+				BBE8310C291E012400147814 /* GoogleService-Info.plist in Resources */,
+				BBE83101291DFEBF00147814 /* Assets.xcassets in Resources */,
+				BBE830FF291DFEBD00147814 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		876B6A560E4EAA7DCCF92DAE /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientHealthChart/Pods-PatientHealthChart-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PatientHealthChart/Pods-PatientHealthChart-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PatientHealthChart/Pods-PatientHealthChart-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		926B4D80CBF237FD19405DF8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PatientHealthChart-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BBE830F0291DFEBD00147814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BBE830FC291DFEBD00147814 /* ViewController.swift in Sources */,
+				BB85D903291E10140041E2BD /* DashboardViewController.swift in Sources */,
+				BB85D8FF291E096C0041E2BD /* KeyChainService.swift in Sources */,
+				BB85D901291E09C50041E2BD /* StringExtension.swift in Sources */,
+				BBE830F8291DFEBD00147814 /* AppDelegate.swift in Sources */,
+				BBE830FA291DFEBD00147814 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		BBE830FD291DFEBD00147814 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE830FE291DFEBD00147814 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BBE83102291DFEBF00147814 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BBE83103291DFEBF00147814 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BBE83106291DFEBF00147814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BBE83107291DFEBF00147814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BBE83109291DFEBF00147814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5EE5F530FC8EDA0A0396587F /* Pods-PatientHealthChart.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PVX7KZS4M6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatientHealthChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.haotong.PatientHealthChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BBE8310A291DFEBF00147814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7963A94AD31A07034DD25FC /* Pods-PatientHealthChart.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = PVX7KZS4M6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PatientHealthChart/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.northeastern.haotong.PatientHealthChart;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BBE830EF291DFEBD00147814 /* Build configuration list for PBXProject "PatientHealthChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE83106291DFEBF00147814 /* Debug */,
+				BBE83107291DFEBF00147814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BBE83108291DFEBF00147814 /* Build configuration list for PBXNativeTarget "PatientHealthChart" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BBE83109291DFEBF00147814 /* Debug */,
+				BBE8310A291DFEBF00147814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BBE830EC291DFEBD00147814 /* Project object */;
+}
