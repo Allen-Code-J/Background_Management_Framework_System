@@ -1,4 +1,4 @@
-package com.qingge.springboot.controller;
+package com.example.springboot.controller;
 
 
 import com.baomidou.mybatisplus.core.conditions.query.QueryWrapper;
