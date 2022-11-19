@@ -15,6 +15,7 @@
 		BB01781C29273A6000F73AD6 /* AddAPostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01781B29273A6000F73AD6 /* AddAPostViewController.swift */; };
 		BB01781F2927621600F73AD6 /* imagePostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB01781D2927621600F73AD6 /* imagePostTableViewCell.swift */; };
 		BB0178202927621600F73AD6 /* imagePostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB01781E2927621600F73AD6 /* imagePostTableViewCell.xib */; };
+		BB69D20C29281D4A004A77A7 /* PostsClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB69D20B29281D4A004A77A7 /* PostsClass.swift */; };
 		BB915776292700310007DE53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB915775292700310007DE53 /* AppDelegate.swift */; };
 		BB915778292700310007DE53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB915777292700310007DE53 /* SceneDelegate.swift */; };
 		BB91577F292700320007DE53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BB91577E292700320007DE53 /* Assets.xcassets */; };
@@ -33,6 +34,7 @@
 		BB01781B29273A6000F73AD6 /* AddAPostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddAPostViewController.swift; sourceTree = "<group>"; };
 		BB01781D2927621600F73AD6 /* imagePostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = imagePostTableViewCell.swift; sourceTree = "<group>"; };
 		BB01781E2927621600F73AD6 /* imagePostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = imagePostTableViewCell.xib; sourceTree = "<group>"; };
+		BB69D20B29281D4A004A77A7 /* PostsClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsClass.swift; sourceTree = "<group>"; };
 		BB915772292700310007DE53 /* InstaTok.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstaTok.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BB915775292700310007DE53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB915777292700310007DE53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -81,6 +83,14 @@
 			path = AddAPost;
 			sourceTree = "<group>";
 		};
+		BB69D20A29281D2E004A77A7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BB69D20B29281D4A004A77A7 /* PostsClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		BB915769292700310007DE53 = {
 			isa = PBXGroup;
 			children = (
@@ -102,6 +112,7 @@
 		BB915774292700310007DE53 /* InstaTok */ = {
 			isa = PBXGroup;
 			children = (
+				BB69D20A29281D2E004A77A7 /* Models */,
 				BB01781A29273A3500F73AD6 /* AddAPost */,
 				BB01781329270D1F00F73AD6 /* Utilities */,
 				BB91578E292706220007DE53 /* Dashboard */,
@@ -261,6 +272,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB69D20C29281D4A004A77A7 /* PostsClass.swift in Sources */,
 				BB91578D292705E30007DE53 /* LoginViewController.swift in Sources */,
 				BB017819292736D400F73AD6 /* DashboardViewController.swift in Sources */,
 				BB915776292700310007DE53 /* AppDelegate.swift in Sources */,

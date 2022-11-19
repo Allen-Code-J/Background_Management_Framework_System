@@ -65,7 +65,7 @@
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
                 <outlet property="caption" destination="F7M-xb-Bno" id="2EG-yW-ZRl"/>
-                <outlet property="dataTime" destination="eAZ-J1-zx6" id="s7X-FC-px7"/>
+                <outlet property="dateTime" destination="eAZ-J1-zx6" id="75n-Y7-3kZ"/>
                 <outlet property="imgView" destination="OYc-x0-UNf" id="f8F-Ej-Evr"/>
                 <outlet property="location" destination="cmK-7C-J18" id="YOc-xm-6wq"/>
             </connections>
@@ -73,6 +73,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="LA" width="3992" height="2242"/>
+        <image name="LA" width="1585" height="792"/>
     </resources>
 </document>
